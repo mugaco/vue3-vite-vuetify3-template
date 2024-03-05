@@ -1,4 +1,3 @@
-// plugins/loadDataPlugin.js
 // import axios from 'axios';
 import { useUserStore } from '@/store/user.js';
 
