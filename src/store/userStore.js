@@ -1,4 +1,4 @@
-// store/user.js
+// store/userStore.js
 import { defineStore } from 'pinia';
 
 
@@ -8,8 +8,8 @@ export const useUserStore = defineStore('user', {
     state: () => {
         return {
             user_id: null,
-            name: 'Juan Doe',
-            email: 'john@example.com',
+            name: 'Jaime',
+            email: 'jaime@example.com',
             role: null,
             is: null,
             signature: null,

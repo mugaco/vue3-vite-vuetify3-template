@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [
     vue(),
     Components({
+      directoryAsNamespace: true,
       // configuraciones adicionales aquí
       resolvers: [VantResolver()],
     })

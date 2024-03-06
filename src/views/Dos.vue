@@ -1,18 +1,15 @@
 <template>
-  <div>page 2 {{ name }}</div>
+  <div> P2</div>
+ 
 </template>
 
 <script setup>
-import { useUserStore } from "@/store/user";
+import { useUserStore } from "@/store/userStore.js";
 import { useHead } from '@vueuse/head';
 const { name } = useUserStore();
 
 useHead({
   title: 'Mi Dos Página Increíble',
-//   link: [
-//     { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-//     // Puedes añadir más enlaces aquí
-//   ]
 });
 </script>
 

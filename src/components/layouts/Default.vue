@@ -4,6 +4,7 @@
     <header>
       menu: <router-link to="/">Ir a Home</router-link>
       <router-link to="/dos">Ir a Dos</router-link>
+      <CambiarIdioma />
     </header>
     <main>
       <!-- Aquí se renderizarán los componentes de la ruta -->
