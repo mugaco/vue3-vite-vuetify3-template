@@ -7,9 +7,10 @@ export default {
     });
 
     axiosInstance.interceptors.request.use(config => {
+      // console.log("Añadiendo headers");
       const token = "TU_TOKEN_DE_AUTENTICACION";
       config.headers["X-Application"] = 'foo'
-    //   config.headers.Authorization = token ? `Bearer ${token}` : '';
+      config.headers.Authorization = token ? `Bearer ${token}` : '';
       return config;
     }, error => {
       return Promise.reject(error);
