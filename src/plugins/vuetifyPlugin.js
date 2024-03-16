@@ -35,7 +35,7 @@ export default {
     try {
 
       const layout = useLayoutStore();
-      console.log(dark, isDark, layout.darkTheme)
+
 
       const vuetify = createVuetify({
         components: components,

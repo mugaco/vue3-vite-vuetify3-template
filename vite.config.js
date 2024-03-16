@@ -6,8 +6,17 @@ import { resolve } from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    
-    vue(),
+
+    vue({
+      // Esta opción permite inyectar estilos SCSS globales
+      css: {
+        preprocessorOptions: {
+          scss: {
+            additionalData: `@import "${resolve(__dirname, 'assets/styles/main.scss')}";`
+          }
+        }
+      }
+    }),
     Components({
       directoryAsNamespace: true,
       // configuraciones adicionales aquí

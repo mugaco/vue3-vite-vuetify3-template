@@ -1,0 +1,4 @@
+button.icon-move:hover .v-icon {
+    transform: translateX(5px);
+    transition: transform 0.2s ease-in-out;
+}

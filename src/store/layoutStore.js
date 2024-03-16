@@ -6,7 +6,7 @@ export const useLayoutStore = defineStore('layout', {
   state: () => {
     return {
       // maxWidth: '1240px',
-      // drawer: true,
+      drawer: true,
       // rightDrawer: false,
       // rightDrawerWidth: 900,
       // rightDrawerContent: null, // aquí se almacenará el contenido del drawer

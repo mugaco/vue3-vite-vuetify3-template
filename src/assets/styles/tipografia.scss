@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Alegreya Italic Variable';
+  src: url('fonts/Alegreya/Alegreya-Italic-VariableFont_wght.ttf') format('truetype');
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Josefin';
+  src: url('fonts/JosefinSlab/JosefinSlab-VariableFont_wght.ttf') format('truetype');
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Josefin Italic';
+  src: url('fonts/JosefinSlab/JosefinSlab-Italic-VariableFont_wght.ttf') format('truetype');
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alegreya Variable';
+  src: url('fonts/Alegreya/Alegreya-VariableFont_wght.ttf') format('truetype');
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+
+  font-display: swap;
+}
+
+// @font-face {
+//   font-family: 'Montserrat';
+//   src: url('fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+
+//   font-display: swap;
+// }
+
+@font-face {
+  font-family: 'Cormorant Italic Variable';
+  src: url('fonts/Cormorant/Cormorant-Italic-VariableFont_wght') format('truetype');
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cormorant';
+  src: url('fonts/Cormorant/Cormorant-VariableFont_wght.ttf') format('truetype');
+
+  font-display: swap;
+}
+
+html {
+
+  font-size: 1rem;
+  /* Tamaño de fuente raíz */
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+
+  .italic {
+    font-family: 'Alegreya Italic Variable', sans-serif;
+    font-weight: 400;
+  }
+
+  // font-family: 'Montserrat', serif !important;
+  // font-weight: 400; 
+
+
+}
+
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: 'Cormorant', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+body h1,
+body h2 {
+  font-weight: 600;
+}
+
+
+
+/* Tamaño de fuente para dispositivos móviles */
+@media (max-width: 767px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+/* Tamaño de fuente para portátiles de 13 pulgadas */
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 1.2rem;
+    line-height: 2rem;
+
+  }
+}
+
+/* Tamaño de fuente para pantallas de escritorio */
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+  }
+}

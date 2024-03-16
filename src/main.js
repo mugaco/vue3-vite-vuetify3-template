@@ -11,7 +11,7 @@ import i18n from './plugins/i18nPlugin';
 import axiosPlugin from './plugins/axiosPlugin';
 import vuetify from './plugins/vuetifyPlugin';
 // console.log(vuetify)
-
+import './assets/styles/main.scss'
 const app = createApp(App);
 const head = createHead();
 const pinia = createPinia();
