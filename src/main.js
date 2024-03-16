@@ -1,6 +1,7 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router'; // Importa la configuración del router
+import setupAuthMiddleware from './middlewares/auth';
 import { createPinia } from 'pinia'; // Importa Pinia
 import { createHead } from '@vueuse/head';
 
@@ -15,6 +16,8 @@ const app = createApp(App);
 const head = createHead();
 const pinia = createPinia();
 
+// Aplica el middleware auth al router
+setupAuthMiddleware(router);
 app.use(router); // Usa Vue Router
 app.use(pinia); // Usa Pinia
 
@@ -27,21 +30,4 @@ app.use(head);
 app.use(axiosPlugin, { baseURL: import.meta.env.VITE_API_URL });
 app.use(vuetify)
 app.mount('#app');
-// ---
-// // main.js
-// import { createApp } from 'vue';
-// import App from './App.vue';
-// import router from './router';
-// import { createPinia } from 'pinia';
-// import { createHead } from '@vueuse/head';
-// import setupI18n from './plugins/i18n'; // Importa la función
 
-// const app = createApp(App);
-// const head = createHead();
-// const pinia = createPinia();
-
-// app.use(router);
-// app.use(pinia);
-// setupI18n(app); // Configura vue-i18n después de instalar Pinia
-// app.use(head);
-// app.mount('#app');

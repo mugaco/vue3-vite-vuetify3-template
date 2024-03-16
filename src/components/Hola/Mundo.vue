@@ -1,20 +1,34 @@
 <template>
   <div>
     Hola mundo
-    <v-btn @click="pedri">hola boton</v-btn>
+
+
+
+  
+
+
+    <v-btn @click="gd" color="primary">Get Data</v-btn>
+
   </div>
 </template>
 
 <script setup>
 import { useAxios } from "@/composables/useAxios";
+import { ref } from 'vue'
 
 const axios = useAxios();
 
-const pedri = () => {
+const email = ref('jmanuel@quartup.com')
+const password = ref('jmm386387')
+
+
+
+const gd = () => {
   axios
-    .get("/logistic/logiente/pedro")
+    .get("/concept/one")
     .then((response) => {
-      console.log("then", response.data);
+      console.log("data", response.data);
+
     })
     .catch((error) => {
       console.error(error);

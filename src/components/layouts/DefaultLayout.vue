@@ -4,6 +4,7 @@
     <header>
       menu: <router-link to="/">Ir a Home</router-link>
       <router-link to="/dos">Ir a Dos</router-link>
+      <router-link to="/auth/login">Logins</router-link>
       <CambiarIdioma />
     </header>
     <main>

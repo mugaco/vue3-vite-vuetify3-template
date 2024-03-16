@@ -1,6 +1,7 @@
 <template>
     <div>
-        <AuthLoginForm />
+        404
+
     </div>
 </template>
 
