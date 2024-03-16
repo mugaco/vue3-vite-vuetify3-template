@@ -31,6 +31,11 @@ const sidebarItem = [
         icon: PhoneCallIcon,
         to: '/dos'
     },
+    {
+        title: 'Tres',
+        icon: StarIcon,
+        to: '/tres'
+    },
     // {
     //     title: 'contact',
     //     icon: UsersGroupIcon,

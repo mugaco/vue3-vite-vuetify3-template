@@ -14,7 +14,8 @@
       </header> -->
       <!-- <Header /> -->
       <v-main>
-        <router-view />
+        <slot></slot>
+
       </v-main>
     </v-layout>
   </v-app>
