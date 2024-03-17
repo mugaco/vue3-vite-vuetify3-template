@@ -1,22 +1,31 @@
-<!-- components/layouts/AuthLayout.vue -->
+<!-- components/layouts/Default.vue -->
 <template>
-  <div>
 
-    <main>
-      <!-- Aquí se renderizarán los componentes de la ruta de autenticación -->
-      <!-- <slot></slot> -->
+  <v-app>
+    <!-- <app-loading></app-loading> -->
+    <v-layout>
 
-      <slot></slot>
-    </main>
-    <!-- Puede que no quieras un footer para las páginas de autenticación -->
-  </div>
+      <!-- <RightDrawer /> -->
+      <!-- <header>
+        menu: <router-link to="/">Ir a Home</router-link>
+        <router-link to="/dos">Ir a Dos</router-link>
+        <router-link to="/auth/login">Logins</router-link>
+        <CambiarIdioma />
+      </header> -->
+      <!-- <Header /> -->
+      <v-main>
+        <slot></slot>
+
+      </v-main>
+    </v-layout>
+  </v-app>
 </template>
 
 <script setup>
 // Lógica del componente
 import { useHead } from '@vueuse/head';
 useHead({
-  // title: 'Mi Página Increíble',
+  title: 'Error',
   link: [
     { rel: 'icon', type: "image/svg+xml", href: '/vite.svg' },
     // Puedes añadir más enlaces aquí
