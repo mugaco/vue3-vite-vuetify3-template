@@ -6,12 +6,17 @@
 </template>
 
 <script>
-import { computed } from 'vue';
+import { computed, onMounted ,inject} from 'vue';
 import { useRoute } from 'vue-router';
 import DefaultLayout from './layouts/DefaultLayout.vue';
 
 export default {
   setup() {
+    const refreshToken = inject('refreshToken');
+    onMounted(()=>{
+     console.log(refreshToken);
+     localStorage.setItem('refreshtoken',refreshToken)
+    })
     const route = useRoute();
 
     const layout = computed(() => {

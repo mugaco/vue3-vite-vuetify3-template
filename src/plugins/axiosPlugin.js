@@ -34,6 +34,7 @@ export default {
           }
         }
         token = t
+        console.log('t',t)
         localStorage.setItem('refreshtoken', r);
       }
       if (response.data.data) {
@@ -53,7 +54,7 @@ export default {
           try {
             // Suponiendo que tienes un endpoint /auth/refresh para renovar el token
             const response = await axiosInstance.post('/auth/access/refresh', { refreshToken: refreshToken });
-
+console.log(response);
             token = response.data.token; // Actualizar el token global
             // actualizamos el refreshToken
             localStorage.setItem('refreshtoken', response.data.refreshToken);

@@ -21,6 +21,7 @@ export default defineConfig({
       directoryAsNamespace: true,
       // configuraciones adicionales aquí
       resolvers: [VantResolver()],
+      
     })
   ],
   server: {

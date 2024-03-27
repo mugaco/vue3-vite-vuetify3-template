@@ -13,6 +13,11 @@
         <CambiarIdioma />
       </header> -->
       <!-- <Header /> -->
+      <HeaderHeader>
+        <template #izquierda>
+          <router-link to="/auth">Logins</router-link>
+        </template>
+      </HeaderHeader>
       <v-main>
         <slot></slot>
 

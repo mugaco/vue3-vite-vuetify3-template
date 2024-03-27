@@ -29,5 +29,11 @@ app.use(i18n)
 app.use(head);
 app.use(axiosPlugin, { baseURL: import.meta.env.VITE_API_URL });
 app.use(vuetify)
+
+const refreshToken = () =>{
+    const el = document.getElementById('apir-usuario')
+   return el.getAttribute("data-apir");
+}
+app.provide('refreshToken', refreshToken());
 app.mount('#app');
 

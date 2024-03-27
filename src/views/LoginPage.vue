@@ -9,8 +9,8 @@
                     </div>
                 </div>
                 <div class="">
-                    <img src="@/assets/images/backgrounds/mesa.svg" class="position-relative d-none d-lg-flex"
-                        alt="login-background" />
+                    <!-- <img src="@/assets/images/backgrounds/mesa.svg" class="position-relative d-none d-lg-flex"
+                        alt="login-background" /> -->
                 </div>
             </v-col>
             <v-col cols="12" lg="5" xl="4" class="d-flex align-center justify-center">

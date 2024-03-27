@@ -39,7 +39,8 @@
       <v-alert color="error">{{ alertError }}</v-alert>
     </div>
 
-    <v-btn @click="refresh">test</v-btn>
+    <v-btn @click="refresh">refresh</v-btn>
+    <v-btn @click="concept">concept</v-btn>
 
 
   </div>
@@ -57,6 +58,20 @@ const axios = useAxios();
 
 
 const handleRecoverPass = () => { }
+const concept = () => {
+  const refreshToken = localStorage.getItem('refreshtoken');
+  axios
+  .get("/concept/one")
+  .then((response) => {
+
+  })
+  .catch((error) => {
+    console.log('submit error ...')
+    // console.log('error', error.response.data.message);
+    // console.log('error', error.response.data.status);
+    // console.error('error', error);
+  });
+}
 const refresh = () => {
   const refreshToken = localStorage.getItem('refreshtoken');
   axios
