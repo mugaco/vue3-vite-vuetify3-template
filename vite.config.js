@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
-import { VantResolver } from 'unplugin-vue-components/resolvers';
 import { resolve } from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -18,11 +17,11 @@ export default defineConfig({
       }
     }),
     Components({
-      directoryAsNamespace: true,
-      // configuraciones adicionales aquí
-      resolvers: [VantResolver()],
-      
-    })
+      dirs: ['src/components'], // Puedes añadir más rutas si es necesario
+      extensions: ['vue'], // Extensiones de archivo a considerar
+      deep: true, // Buscar en subdirectorios de forma recursiva
+      dts: true, // Generar archivo de declaración TypeScript
+    }),
   ],
   server: {
     port: 8812, // Especifica el puerto deseado aquí
